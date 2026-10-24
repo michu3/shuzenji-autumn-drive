@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>修善寺・秋の紅葉絶景ドライブナビ 2026 | スマホ旅のしおり</title>
+  
+  <!-- Standalone PWA Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="修善寺紅葉ナビ">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="修善寺の紅葉、伊豆スカイライン、達磨山展望台からの富士山、温泉街散策と蕎麦ランチを楽しむ半日ドライブツアースマホナビしおり">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            autumn: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            maple: {
+              500: '#ef4444',
+              600: '#dc2626',
+              700: '#b91c1c',
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* モバイル操作感の向上：長押しタップハイライト抑止 */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 24px);
+    }
+    /* すりガラスエフェクト */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .dark .glass-card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(51, 65, 85, 0.8);
+    }
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(51, 65, 85, 0.8);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen pb-36 font-sans antialiased">
+
+  <!-- ヘッダーエリア -->
+  <header class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white pt-8 pb-10 px-5 shadow-lg">
+    <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-10 -top-10 w-48 h-48 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-md mx-auto relative z-10">
+      <div class="flex items-center justify-between gap-2 mb-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> 2026年11月下旬・紅葉見頃期
+        </span>
+        <span class="text-xs text-slate-400 flex items-center gap-1">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i> 朝7:00発〜午後帰着
+        </span>
+      </div>
+
+      <h1 class="text-2xl font-bold tracking-tight text-white mb-2 leading-snug">
+        修善寺 紅葉＆富士山絶景<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-300 to-red-400">
+          半日スマートドライブナビ
+        </span>
+      </h1>
+      <p class="text-xs text-slate-300 leading-relaxed mb-5">
+        伊豆スカイライン稜線ドライブ ➔ もみじ林 ➔ 達磨山大パノラマ ➔ 温泉街散策＆生わさび蕎麦ランチ。午後の東名上り渋滞前にスマート帰宅！
+      </p>
+
+      <!-- アクションボタン群（カレンダー連携・全体案内） -->
+      <div class="grid grid-cols-2 gap-2.5">
+        <a href="shuzenji_tour_202611.ics" download class="flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 transition text-xs font-medium text-white border border-white/15 shadow-sm">
+          <i data-lucide="calendar-plus" class="w-4 h-4 text-amber-400"></i>
+          カレンダー一括登録 (.ics)
+        </a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=修善寺・秋の紅葉絶景ドライブツアー2026&dates=20261128T070000/20261128T163000&details=朝7時出発、伊豆スカイライン〜修善寺もみじ林〜達磨山展望台〜温泉街散策＆蕎麦ランチ&location=修善寺温泉" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 transition text-xs font-medium text-white border border-white/15 shadow-sm">
+          <i data-lucide="calendar" class="w-4 h-4 text-sky-400"></i>
+          Googleカレンダー登録
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインコンテンツコンテナ -->
+  <main class="max-w-md mx-auto px-4 -mt-4 relative z-20 space-y-5">
+
+    <!-- 1. ルート全体像・高低差SVGインフォグラフィック -->
+    <section class="glass-card rounded-2xl p-4 shadow-sm border">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+          <i data-lucide="map" class="w-3.5 h-3.5 text-amber-500"></i> ルート全体像 ＆ 標高マップ
+        </h2>
+        <span class="text-[11px] text-slate-400">ピンタップでジャンプ</span>
+      </div>
+
+      <!-- SVGルート標高ダイアグラム -->
+      <div class="w-full bg-slate-100 dark:bg-slate-900/60 rounded-xl p-3 overflow-hidden border border-slate-200/50 dark:border-slate-800/50">
+        <svg viewBox="0 0 380 150" class="w-full h-auto text-xs" xmlns="http://www.w3.org/2000/svg">
+          <!-- 背景グリッド・標高ガイド -->
+          <line x1="20" y1="30" x2="360" y2="30" stroke="currentColor" stroke-dasharray="3,3" class="text-slate-300 dark:text-slate-700" stroke-width="0.8"/>
+          <text x="24" y="26" class="text-[9px] fill-slate-400 font-mono">標高 650m (伊豆スカ・達磨山)</text>
+
+          <line x1="20" y1="80" x2="360" y2="80" stroke="currentColor" stroke-dasharray="3,3" class="text-slate-300 dark:text-slate-700" stroke-width="0.8"/>
+          <text x="24" y="76" class="text-[9px] fill-slate-400 font-mono">標高 250m (もみじ林)</text>
+
+          <line x1="20" y1="125" x2="360" y2="125" stroke="currentColor" stroke-dasharray="3,3" class="text-slate-300 dark:text-slate-700" stroke-width="0.8"/>
+          <text x="24" y="121" class="text-[9px] fill-slate-400 font-mono">標高 100m (温泉街・平地)</text>
+
+          <!-- 走行ルート標高プロファイル曲線 -->
+          <path d="M 30,125 Q 60,110 80,45 Q 110,40 140,85 Q 170,95 200,45 Q 230,50 250,125 Q 290,125 350,125" 
+                fill="none" stroke="url(#routeGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- グラデーション定義 -->
+          <defs>
+            <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8" />
+              <stop offset="25%" stop-color="#f59e0b" />
+              <stop offset="50%" stop-color="#ef4444" />
+              <stop offset="75%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#6366f1" />
+            </linearGradient>
+          </defs>
+
+          <!-- スポットピン 1: 出発 (07:00) -->
+          <g class="cursor-pointer" onclick="scrollToCard('card-step-1')">
+            <circle cx="30" cy="125" r="4.5" class="fill-sky-500 stroke-white stroke-2" />
+            <text x="30" y="142" text-anchor="middle" class="text-[9px] font-bold fill-slate-700 dark:fill-slate-300">07:00発</text>
+          </g>
+
+          <!-- スポットピン 2: 伊豆スカイライン・滝知山 (08:15) -->
+          <g class="cursor-pointer" onclick="scrollToCard('card-step-2')">
+            <circle cx="85" cy="45" r="5" class="fill-amber-500 stroke-white stroke-2 animate-pulse" />
+            <text x="85" y="18" text-anchor="middle" class="text-[9px] font-bold fill-amber-600 dark:fill-amber-400">伊豆スカ滝知山</text>
+          </g>
+
+          <!-- スポットピン 3: もみじ林 (09:05) -->
+          <g class="cursor-pointer" onclick="scrollToCard('card-step-3')">
+            <circle cx="140" cy="85" r="5" class="fill-red-500 stroke-white stroke-2" />
+            <text x="140" y="70" text-anchor="middle" class="text-[9px] font-bold fill-red-600 dark:fill-red-400">もみじ林</text>
+          </g>
+
+          <!-- スポットピン 4: 達磨山展望台 (10:15) -->
+          <g class="cursor-pointer" onclick="scrollToCard('card-step-4')">
+            <circle cx="200" cy="45" r="5.5" class="fill-indigo-500 stroke-white stroke-2" />
+            <text x="200" y="18" text-anchor="middle" class="text-[9px] font-bold fill-indigo-600 dark:fill-indigo-400">🗻達磨山展望台</text>
+          </g>
+
+          <!-- スポットピン 5: 温泉街＆ランチ (11:15〜) -->
+          <g class="cursor-pointer" onclick="scrollToCard('card-step-5')">
+            <circle cx="250" cy="125" r="5" class="fill-emerald-500 stroke-white stroke-2" />
+            <text x="250" y="142" text-anchor="middle" class="text-[9px] font-bold fill-emerald-600 dark:fill-emerald-400">ランチ＆温泉街</text>
+          </g>
+
+          <!-- スポットピン 6: 道の駅函南 ＆ 帰路 (14:05) -->
+          <g class="cursor-pointer" onclick="scrollToCard('card-step-7')">
+            <circle cx="310" cy="125" r="4.5" class="fill-slate-500 stroke-white stroke-2" />
+            <text x="310" y="142" text-anchor="middle" class="text-[9px] font-bold fill-slate-700 dark:fill-slate-300">道の駅函南</text>
+          </g>
+        </svg>
+      </div>
+      <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-2 text-center">
+        稜線絶景 ➔ 山中紅葉 ➔ 富士山パノラマ ➔ 谷あいの温泉街へ下る黄金ルート
+      </p>
+    </section>
+
+    <!-- 2. 本日のドライブ成功3大Tips -->
+    <section class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-4 text-xs space-y-2">
+      <div class="flex items-center gap-2 font-bold text-amber-800 dark:text-amber-300">
+        <i data-lucide="info" class="w-4 h-4"></i> ドライブ成功のための最重要Tips
+      </div>
+      <ul class="space-y-1.5 text-amber-900/90 dark:text-amber-200/90 pl-1 leading-relaxed">
+        <li class="flex items-start gap-1.5">
+          <span class="text-amber-600 font-bold">①</span>
+          <span><b>富士山は午前中勝負:</b> 気温上昇で雲が出る前の朝〜11時までに達磨山へ！</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-amber-600 font-bold">②</span>
+          <span><b>ランチは11:30前に入店:</b> 紅葉ピークの修善寺蕎麦処は12時台に大行列必至。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-amber-600 font-bold">③</span>
+          <span><b>14時台出発で完全渋滞フリー:</b> 東名上り（大和トンネル）渋滞ピーク前に通過！</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3. スケジュールタイムライン（各スポットカード） -->
+    <div class="space-y-4" id="timeline-container">
+
+      <!-- STEP 1: 出発 -->
+      <article id="card-step-1" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold text-xs">1</span>
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400">07:00 スタート</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(1, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="car" class="w-4 h-4 text-sky-500"></i> ドライブ出発（小田原厚木道路〜箱根新道経由）
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-3 leading-relaxed">
+          東名・小田原厚木道路から箱根新道（無料）を駆け上がり、十国峠・熱海峠ICへ向かいます。早朝出発で渋滞ゼロ！
+        </p>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=熱海峠IC&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> 熱海峠ICへナビ開始
+        </a>
+      </article>
+
+      <!-- STEP 2: 伊豆スカイライン・滝知山展望台（紅葉ドライブ） -->
+      <article id="card-step-2" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-xs">2</span>
+            <span class="text-xs font-bold text-amber-600 dark:text-amber-400">08:15〜08:45 (滞在約30分)</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(2, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <div class="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20 mb-1.5">
+          🍁 往路の紅葉絶景ハイライト
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="mountain-snow" class="w-4 h-4 text-amber-500"></i> 伊豆スカイライン 紅葉ドライブ ＆ 滝知山展望台
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-2 leading-relaxed">
+          熱海峠ICから亀石峠IC（普通車430円）へ。標高650mの尾根道を疾走！途中の「滝知山展望台」は相模湾と駿河湾、富士山を一度に望む360度大パノラマです。
+        </p>
+
+        <!-- 座標・施設データ -->
+        <div class="bg-slate-100 dark:bg-slate-900/60 rounded-xl p-2.5 text-[11px] space-y-1 mb-3 text-slate-600 dark:text-slate-300">
+          <div class="flex justify-between">
+            <span class="text-slate-400">場所:</span>
+            <span class="font-medium">伊豆スカイライン 滝知山展望台（無料P）</span>
+          </div>
+          <div class="flex justify-between font-mono">
+            <span class="text-slate-400">座標:</span>
+            <span>35.109850, 139.043820</span>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=35.109850,139.043820&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-amber-600 hover:bg-amber-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> 滝知山展望台へナビ開始
+        </a>
+      </article>
+
+      <!-- STEP 3: 修善寺自然公園 もみじ林 -->
+      <article id="card-step-3" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-red-500/10 text-red-600 dark:text-red-400 flex items-center justify-center font-bold text-xs">3</span>
+            <span class="text-xs font-bold text-red-600 dark:text-red-400">09:05〜09:55 (滞在約50分)</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(3, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <div class="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-red-500/10 text-red-700 dark:text-red-300 border border-red-500/20 mb-1.5">
+          🍁 伊豆屈指！約1,000本のもみじ群生
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="trees" class="w-4 h-4 text-red-500"></i> 修善寺自然公園 もみじ林
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-2 leading-relaxed">
+          亀石峠ICから県道19号を下って直行。朝の柔らかな光が葉を透かすもみじトンネルを心地よく一周散策できます。混雑前に静寂の中で鑑賞！
+        </p>
+
+        <!-- 座標・駐車場データ -->
+        <div class="bg-slate-100 dark:bg-slate-900/60 rounded-xl p-2.5 text-[11px] space-y-1 mb-3 text-slate-600 dark:text-slate-300">
+          <div class="flex justify-between">
+            <span class="text-slate-400">駐車場:</span>
+            <span class="font-medium">もみじ林専用駐車場（紅葉期500円）</span>
+          </div>
+          <div class="flex justify-between font-mono">
+            <span class="text-slate-400">座標:</span>
+            <span>34.978120, 138.906350</span>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.978120,138.906350&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-red-600 hover:bg-red-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> もみじ林駐車場へナビ開始
+        </a>
+      </article>
+
+      <!-- STEP 4: 達磨山展望台（だるま山高原レストハウス） -->
+      <article id="card-step-4" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold text-xs">4</span>
+            <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400">10:15〜10:55 (滞在約40分)</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(4, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <div class="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/20 mb-1.5">
+          🗻 NY万博出品！世界が認めた富士山大パノラマ
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="camera" class="w-4 h-4 text-indigo-500"></i> 達磨山展望台（だるま山高原レストハウス）
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-2 leading-relaxed">
+          県道18号線の紅葉ワインディングを駆け上がり標高620mへ。正面に駿河湾・戸田港・富士山が一望できる息を呑む絶景！レストハウスの展望テラスで一息。
+        </p>
+
+        <!-- 座標・施設データ -->
+        <div class="bg-slate-100 dark:bg-slate-900/60 rounded-xl p-2.5 text-[11px] space-y-1 mb-3 text-slate-600 dark:text-slate-300">
+          <div class="flex justify-between">
+            <span class="text-slate-400">所在地:</span>
+            <span class="font-medium">静岡県伊豆市大沢1018-1（無料P約40台）</span>
+          </div>
+          <div class="flex justify-between font-mono">
+            <span class="text-slate-400">座標:</span>
+            <span>34.975645, 138.850448</span>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.975645,138.850448&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> だるま山高原レストハウスへナビ開始
+        </a>
+      </article>
+
+      <!-- STEP 5: ランチスポットセレクター ＆ 昼食 -->
+      <article id="card-step-5" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-xs">5</span>
+            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">11:15〜12:30 (昼食＆休憩)</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(5, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <div class="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20 mb-1.5">
+          🥢 ご当地名物・手打ち蕎麦ランチ
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-2 flex items-center gap-1.5">
+          <i data-lucide="utensils" class="w-4 h-4 text-emerald-500"></i> ランチスポット選択
+        </h3>
+
+        <!-- ランチ候補切り替えタブセレクター -->
+        <div class="grid grid-cols-3 gap-1.5 p-1 bg-slate-200/70 dark:bg-slate-800 rounded-xl mb-3 text-xs font-semibold">
+          <button id="btn-lunch-nanaban" onclick="selectLunch('nanaban')" 
+                  class="py-2 px-1.5 rounded-lg text-center transition bg-white dark:bg-slate-900 shadow-sm text-emerald-600 dark:text-emerald-400">
+            禅風亭 なゝ番
+          </button>
+          <button id="btn-lunch-yamabiko" onclick="selectLunch('yamabiko')" 
+                  class="py-2 px-1.5 rounded-lg text-center transition text-slate-600 dark:text-slate-400 hover:text-slate-900">
+            やまびこ
+          </button>
+          <button id="btn-lunch-bokunenjin" onclick="selectLunch('bokunenjin')" 
+                  class="py-2 px-1.5 rounded-lg text-center transition text-slate-600 dark:text-slate-400 hover:text-slate-900">
+            朴念仁
+          </button>
+        </div>
+
+        <!-- 選択中の店舗情報（JSで動的切り替え） -->
+        <div id="lunch-info-box" class="bg-slate-100 dark:bg-slate-900/60 rounded-xl p-3 text-xs space-y-2 mb-3">
+          <!-- 初期表示: 禅風亭 なゝ番 -->
+          <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-1.5">
+            <span class="font-bold text-slate-800 dark:text-white text-sm" id="lunch-title">禅風亭 なゝ番</span>
+            <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 font-medium" id="lunch-feature">10:00開店・生わさび丸ごと1本</span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-[11px]" id="lunch-desc">
+            名物「禅寺そば」。天城産の生わさびを自分ですりおろして楽しむ人気店。残ったわさびは専用袋でお持ち帰り可能！温泉街中心にあり徒歩アクセス抜群。
+          </p>
+          <div class="text-[11px] text-slate-500 space-y-0.5 pt-1">
+            <div>住所: <span id="lunch-address" class="text-slate-700 dark:text-slate-300">静岡県伊豆市修善寺761-1-3</span></div>
+            <div>電話: <span id="lunch-phone" class="font-mono text-slate-700 dark:text-slate-300">0558-72-0007</span></div>
+            <div>座標: <span id="lunch-coords" class="font-mono text-slate-700 dark:text-slate-300">34.971521, 138.930887</span></div>
+          </div>
+        </div>
+
+        <a id="lunch-nav-btn" href="https://www.google.com/maps/search/?api=1&query=34.971521,138.930887" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> <span id="lunch-btn-text">禅風亭 なゝ番へナビ</span>
+        </a>
+      </article>
+
+      <!-- STEP 6: 修善寺温泉街 散策 -->
+      <article id="card-step-6" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold text-xs">6</span>
+            <span class="text-xs font-bold text-teal-600 dark:text-teal-400">12:30〜13:45 (徒歩散策 約75分)</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(6, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <div class="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-teal-500/10 text-teal-700 dark:text-teal-300 border border-teal-500/20 mb-1.5">
+          🎋 名刹参拝・特別公開庭園・竹林・足湯
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="footprints" class="w-4 h-4 text-teal-500"></i> 修善寺温泉街 徒歩散策
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-2 leading-relaxed">
+          小滝駐車場に車を置いて徒歩周遊。秋の特別公開「修禅寺 方丈庭園」をはじめ、竹林の小径、恋の橋、川沿いの足湯リバーテラスをのんびり巡ります。
+        </p>
+
+        <!-- 散策ハイライトリスト -->
+        <ul class="text-[11px] text-slate-600 dark:text-slate-300 space-y-1 mb-3 bg-slate-100 dark:bg-slate-900/60 p-2.5 rounded-xl">
+          <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-500"></i> <b>修禅寺:</b> 本堂参拝＆秋の特別公開「方丈庭園」</li>
+          <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-500"></i> <b>竹林の小径:</b> 青竹×もみじのコントラスト＆円形竹ベンチ</li>
+          <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-500"></i> <b>独鈷の湯＆足湯:</b> 川のせせらぎを聞きながら足湯でほっこり</li>
+          <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-500"></i> <b>スイーツ:</b> 修善寺プリン工房 ＆ 源楽の蒸したて胡麻饅頭</li>
+        </ul>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.970250,138.925180&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-teal-600 hover:bg-teal-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> 温泉街拠点駐車場（小滝P）へナビ
+        </a>
+      </article>
+
+      <!-- STEP 7: 道の駅 伊豆ゲートウェイ函南 -->
+      <article id="card-step-7" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 flex items-center justify-center font-bold text-xs">7</span>
+            <span class="text-xs font-bold text-orange-600 dark:text-orange-400">14:05〜14:40 (お土産・休憩)</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(7, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <div class="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-orange-500/10 text-orange-700 dark:text-orange-300 border border-orange-500/20 mb-1.5">
+          🍦 伊豆土産・丹那牛乳ソフト・高速直結
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="shopping-bag" class="w-4 h-4 text-orange-500"></i> 道の駅 伊豆ゲートウェイ函南
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-2 leading-relaxed">
+          伊豆縦貫道沿い。伊豆の海産物・野菜・地酒が揃う最後の買い物スポット。濃厚な丹那牛乳ソフトクリームでドライブ疲れを癒やします。
+        </p>
+
+        <!-- 施設データ -->
+        <div class="bg-slate-100 dark:bg-slate-900/60 rounded-xl p-2.5 text-[11px] space-y-1 mb-3 text-slate-600 dark:text-slate-300">
+          <div class="flex justify-between">
+            <span class="text-slate-400">隣接施設:</span>
+            <span class="font-medium">めんたいパーク伊豆・伊豆わさびミュージアム</span>
+          </div>
+          <div class="flex justify-between font-mono">
+            <span class="text-slate-400">座標:</span>
+            <span>35.080530, 138.938850</span>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=35.080530,138.938850&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-orange-600 hover:bg-orange-500 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> 道の駅 函南へナビ開始
+        </a>
+      </article>
+
+      <!-- STEP 8: 帰路（東名高速上り） -->
+      <article id="card-step-8" class="glass-card rounded-2xl p-4 shadow-sm border transition">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full bg-slate-500/10 text-slate-600 dark:text-slate-400 flex items-center justify-center font-bold text-xs">8</span>
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400">14:40 出発 ➔ 16:30頃 帰着</span>
+          </div>
+          <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer">
+            <input type="checkbox" onchange="toggleStepComplete(8, this.checked)" class="w-4 h-4 rounded text-amber-500 focus:ring-amber-400">
+            通過済
+          </label>
+        </div>
+
+        <h3 class="text-base font-bold text-slate-800 dark:text-white mb-1 flex items-center gap-1.5">
+          <i data-lucide="home" class="w-4 h-4 text-slate-500"></i> 帰路（伊豆縦貫道 ➔ 長泉沼津IC ➔ 東名上り）
+        </h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mb-3 leading-relaxed">
+          14:40に出発すれば、東名上り大和トンネル付近（通常15:30以降から激しい渋滞）を15:30前後にスムーズ通過可能！明るいうちに無事帰宅できます。
+        </p>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=自宅&travelmode=driving" target="_blank" rel="noopener"
+           class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-700 hover:bg-slate-600 active:scale-95 text-white font-semibold text-xs shadow transition">
+          <i data-lucide="navigation" class="w-4 h-4"></i> 自宅へのナビ案内を開始
+        </a>
+      </article>
+
+    </div>
+
+    <!-- 4. 持ち物・チェックリスト -->
+    <section class="glass-card rounded-2xl p-4 shadow-sm border space-y-3">
+      <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+        <i data-lucide="check-square" class="w-4 h-4 text-emerald-500"></i> 出発前チェックリスト
+      </h3>
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <label class="flex items-center gap-2 p-2 rounded-xl bg-slate-100 dark:bg-slate-900/50">
+          <input type="checkbox" class="w-4 h-4 rounded text-emerald-500">
+          <span>ハンドタオル (足湯用)</span>
+        </label>
+        <label class="flex items-center gap-2 p-2 rounded-xl bg-slate-100 dark:bg-slate-900/50">
+          <input type="checkbox" class="w-4 h-4 rounded text-emerald-500">
+          <span>防寒上着 (山頂・朝冷え)</span>
+        </label>
+        <label class="flex items-center gap-2 p-2 rounded-xl bg-slate-100 dark:bg-slate-900/50">
+          <input type="checkbox" class="w-4 h-4 rounded text-emerald-500">
+          <span>小銭 (有料道路・駐車場)</span>
+        </label>
+        <label class="flex items-center gap-2 p-2 rounded-xl bg-slate-100 dark:bg-slate-900/50">
+          <input type="checkbox" class="w-4 h-4 rounded text-emerald-500">
+          <span>歩きやすいスニーカー</span>
+        </label>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. 親指特化型フローティング・ボトムナビバー（fixed bottom-0） -->
+  <aside class="fixed bottom-0 left-0 right-0 glass-nav z-50 px-4 pt-3 pb-safe shadow-2xl">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      
+      <!-- 現在の目的地インフォ -->
+      <div class="flex-1 min-w-0">
+        <div class="text-[10px] uppercase font-bold text-amber-400 tracking-wider flex items-center gap-1">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+          NEXT DESTINATION
+        </div>
+        <div id="bottom-next-title" class="text-xs font-bold text-white truncate">
+          伊豆スカイライン・滝知山展望台
+        </div>
+        <div id="bottom-next-time" class="text-[10px] text-slate-300">
+          到着予定: 08:15 (滞在30分)
+        </div>
+      </div>
+
+      <!-- ワンタップGoogle Mapsナビ開始ボタン -->
+      <a id="bottom-nav-btn" href="https://www.google.com/maps/dir/?api=1&destination=35.109850,139.043820&travelmode=driving" 
+         target="_blank" rel="noopener"
+         class="flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 active:scale-95 text-white font-bold text-xs shadow-lg shadow-orange-500/25 transition shrink-0">
+        <i data-lucide="navigation" class="w-4 h-4 fill-white"></i>
+        <span>ナビ開始</span>
+      </a>
+
+    </div>
+  </aside>
+
+  <!-- スクリプト：リアクティブ動作・スポット切り替え -->
+  <script>
+    // Lucide Icons 初期化
+    lucide.createIcons();
+
+    // スポット定義リスト（チェック状態に応じてボトムバーが自動追従）
+    const tourSpots = [
+      { id: 1, title: "熱海峠IC（小田原厚木・箱根新道経由）", time: "07:00発 ➔ 08:00着", navUrl: "https://www.google.com/maps/dir/?api=1&destination=熱海峠IC&travelmode=driving" },
+      { id: 2, title: "伊豆スカイライン・滝知山展望台", time: "08:15着 (滞在30分)", navUrl: "https://www.google.com/maps/dir/?api=1&destination=35.109850,139.043820&travelmode=driving" },
+      { id: 3, title: "修善寺自然公園 もみじ林", time: "09:05着 (滞在50分)", navUrl: "https://www.google.com/maps/dir/?api=1&destination=34.978120,138.906350&travelmode=driving" },
+      { id: 4, title: "達磨山展望台（だるま山高原レストハウス）", time: "10:15着 (滞在40分)", navUrl: "https://www.google.com/maps/dir/?api=1&destination=34.975645,138.850448&travelmode=driving" },
+      { id: 5, title: "ランチ（手打ち蕎麦処）", time: "11:15着 (昼食約75分)", navUrl: "https://www.google.com/maps/search/?api=1&query=34.971521,138.930887" },
+      { id: 6, title: "修善寺温泉街 散策（小滝駐車場）", time: "12:30〜13:45 (散策75分)", navUrl: "https://www.google.com/maps/dir/?api=1&destination=34.970250,138.925180&travelmode=driving" },
+      { id: 7, title: "道の駅 伊豆ゲートウェイ函南", time: "14:05着 (休憩35分)", navUrl: "https://www.google.com/maps/dir/?api=1&destination=35.080530,138.938850&travelmode=driving" },
+      { id: 8, title: "帰路（東名高速上り・自宅へ）", time: "14:40発 ➔ 16:30頃帰着", navUrl: "https://www.google.com/maps/dir/?api=1&destination=自宅&travelmode=driving" }
+    ];
+
+    // ランチデータ定義
+    const lunchData = {
+      nanaban: {
+        title: "禅風亭 なゝ番",
+        feature: "10:00開店・生わさび丸ごと1本",
+        desc: "名物「禅寺そば」。天城産の生わさびを自分ですりおろして楽しむ人気店。残ったわさびは専用袋でお持ち帰り可能！温泉街中心にあり徒歩アクセス抜群。",
+        address: "静岡県伊豆市修善寺761-1-3",
+        phone: "0558-72-0007",
+        coords: "34.971521, 138.930887",
+        navUrl: "https://www.google.com/maps/search/?api=1&query=34.971521,138.930887"
+      },
+      yamabiko: {
+        title: "手打ちそば やまびこ",
+        feature: "自然薯とろろ＆山菜天ぷら・絶景",
+        desc: "天城連山を望む小高い丘のログハウス調店舗。粘り強い自然薯とろろ蕎麦と、朝採れ地場野菜のサクサク天ぷらが絶品。専用駐車場完備。",
+        address: "静岡県伊豆市修善寺3726-1",
+        phone: "0558-72-7575",
+        coords: "34.973547, 138.913563",
+        navUrl: "https://www.google.com/maps/search/?api=1&query=34.973547,138.913563"
+      },
+      bokunenjin: {
+        title: "朴念仁（ぼくねんじん）",
+        feature: "十割蕎麦＆駿河湾桜えびかき揚げ",
+        desc: "竹林の小径のすぐ隣にある風情ある古民家蕎麦処。極細の十割蕎麦と、香ばしく揚がった桜えびのかき揚げのハーモニーが絶妙。",
+        address: "静岡県伊豆市修善寺3451-40",
+        phone: "0558-73-0073",
+        coords: "34.969536, 138.925818",
+        navUrl: "https://www.google.com/maps/search/?api=1&query=34.969536,138.925818"
+      }
+    };
+
+    let selectedLunchKey = 'nanaban';
+    const completedSteps = new Set();
+
+    // ランチ切り替え処理
+    function selectLunch(key) {
+      selectedLunchKey = key;
+      const data = lunchData[key];
+
+      // UIテキスト更新
+      document.getElementById('lunch-title').textContent = data.title;
+      document.getElementById('lunch-feature').textContent = data.feature;
+      document.getElementById('lunch-desc').textContent = data.desc;
+      document.getElementById('lunch-address').textContent = data.address;
+      document.getElementById('lunch-phone').textContent = data.phone;
+      document.getElementById('lunch-coords').textContent = data.coords;
+      document.getElementById('lunch-btn-text').textContent = data.title + "へナビ";
+      document.getElementById('lunch-nav-btn').href = data.navUrl;
+
+      // タブボタンのアクティブスタイル更新
+      ['nanaban', 'yamabiko', 'bokunenjin'].forEach(k => {
+        const btn = document.getElementById('btn-lunch-' + k);
+        if (k === key) {
+          btn.className = "py-2 px-1.5 rounded-lg text-center transition bg-white dark:bg-slate-900 shadow-sm text-emerald-600 dark:text-emerald-400 font-bold";
+        } else {
+          btn.className = "py-2 px-1.5 rounded-lg text-center transition text-slate-600 dark:text-slate-400 hover:text-slate-900 font-medium";
+        }
+      });
+
+      // スポット5のナビURLも更新
+      tourSpots[4].title = data.title;
+      tourSpots[4].navUrl = data.navUrl;
+
+      updateBottomNav();
+    }
+
+    // スポット通過トグル処理
+    function toggleStepComplete(stepId, isChecked) {
+      if (isChecked) {
+        completedSteps.add(stepId);
+        document.getElementById('card-step-' + stepId).classList.add('opacity-50');
+      } else {
+        completedSteps.delete(stepId);
+        document.getElementById('card-step-' + stepId).classList.remove('opacity-50');
+      }
+      updateBottomNav();
+    }
+
+    // ボトムナビバー更新処理
+    function updateBottomNav() {
+      // 未完了の最小ステップを探す（デフォルトは2番目＝最初の立ち寄り先）
+      let nextSpot = tourSpots.find(s => !completedSteps.has(s.id) && s.id >= 2);
+      if (!nextSpot) {
+        nextSpot = tourSpots[tourSpots.length - 1]; // 全て完了なら帰路
+      }
+
+      document.getElementById('bottom-next-title').textContent = nextSpot.title;
+      document.getElementById('bottom-next-time').textContent = nextSpot.time;
+      document.getElementById('bottom-nav-btn').href = nextSpot.navUrl;
+    }
+
+    // スムーズスクロール
+    function scrollToCard(cardId) {
+      const el = document.getElementById(cardId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.classList.add('ring-2', 'ring-amber-400');
+        setTimeout(() => el.classList.remove('ring-2', 'ring-amber-400'), 1500);
+      }
+    }
+
+    // 初期化実行
+    updateBottomNav();
+  </script>
+</body>
+</html>

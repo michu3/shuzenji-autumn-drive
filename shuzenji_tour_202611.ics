@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Antigravity//Shuzenji Autumn Drive Tour 2026//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:修善寺・秋の紅葉絶景ドライブツアー2026
+X-WR-TIMEZONE:Asia/Tokyo
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:shuzenji-20261128-01@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T070000
+DTEND;TZID=Asia/Tokyo:20261128T081500
+SUMMARY:🚗 出発〜小田原厚木道路・箱根新道ドライブ
+DESCRIPTION:朝7時に出発。東名・小田原厚木道路から箱根新道を経て、熱海峠ICを目指します。
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-02@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T081500
+DTEND;TZID=Asia/Tokyo:20261128T084500
+SUMMARY:🍁 伊豆スカイライン 紅葉パノラマドライブ（滝知山展望台）
+LOCATION:静岡県熱海市熱海 滝知山展望台
+GEO:35.109850;139.043820
+DESCRIPTION:標高400〜800mの稜線ロード。相模湾と駿河湾、富士山を左右に望む紅葉＆ススキの絶景。滝知山展望台で360度パノラマ鑑賞。\nナビ: https://www.google.com/maps/dir/?api=1&destination=35.109850,139.043820&travelmode=driving
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-03@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T090500
+DTEND;TZID=Asia/Tokyo:20261128T095500
+SUMMARY:🍁 修善寺自然公園 もみじ林（朝一番の紅葉鑑賞）
+LOCATION:静岡県伊豆市修善寺 修善寺自然公園 もみじ林
+GEO:34.978120;138.906350
+DESCRIPTION:約1,000本のもみじが山肌を真紅に染める伊豆屈指の名所。朝の光が差し込むもみじトンネルを約45分散策。\nナビ: https://www.google.com/maps/dir/?api=1&destination=34.978120,138.906350&travelmode=driving
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-04@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T101500
+DTEND;TZID=Asia/Tokyo:20261128T105500
+SUMMARY:🗻 達磨山展望台（だるま山高原レストハウス）
+LOCATION:静岡県伊豆市大沢1018-1 だるま山高原レストハウス
+GEO:34.975645;138.850448
+DESCRIPTION:県道18号線の紅葉ワインディングを登り、標高620mへ。ニューヨーク万博出品の絶景！駿河湾・戸田港・富士山の大パノラマ。\nナビ: https://www.google.com/maps/dir/?api=1&destination=34.975645,138.850448&travelmode=driving
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-05@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T111500
+DTEND;TZID=Asia/Tokyo:20261128T123000
+SUMMARY:🥢 修善寺名物ランチ（手打ち蕎麦）
+LOCATION:静岡県伊豆市修善寺
+DESCRIPTION:混雑前に早めのランチ！\n候補A: 禅風亭 なゝ番 (生わさび丸ごと1本 禅寺そば)\n候補B: やまびこ (自然薯とろろ蕎麦・山菜天ぷら)\n候補C: 朴念仁 (竹林沿い 十割蕎麦・桜えびかき揚げ)
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-06@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T123000
+DTEND;TZID=Asia/Tokyo:20261128T134500
+SUMMARY:🎋 修善寺温泉街 散策（修禅寺・竹林の小径・足湯）
+LOCATION:静岡県伊豆市修善寺
+GEO:34.970250;138.925180
+DESCRIPTION:小滝駐車場に駐車して徒歩周遊。\n・修禅寺 本堂参拝＆秋の特別公開「方丈庭園」\n・竹林の小径＆恋の橋めぐり\n・独鈷の湯＆足湯リバーテラス\n・修善寺プリン工房＆源楽の胡麻饅頭
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-07@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T140500
+DTEND;TZID=Asia/Tokyo:20261128T144000
+SUMMARY:🍦 道の駅 伊豆ゲートウェイ函南（お土産＆丹那牛乳ソフト）
+LOCATION:静岡県田方郡函南町塚本887-1 道の駅 伊豆ゲートウェイ函南
+GEO:35.080530;138.938850
+DESCRIPTION:伊豆縦貫道沿いでドライブ休憩とお土産購入。丹那盆地の濃厚ミルクソフトクリーム、地場野菜、わさびミュージアム。\nナビ: https://www.google.com/maps/dir/?api=1&destination=35.080530,138.938850&travelmode=driving
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:shuzenji-20261128-08@antigravity
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=Asia/Tokyo:20261128T144000
+DTEND;TZID=Asia/Tokyo:20261128T163000
+SUMMARY:🚙 帰路（伊豆縦貫道→長泉沼津IC→東名上り）
+DESCRIPTION:14:40現地発。東名上り大和トンネルの夕方渋滞（15:30以降ピーク）前に通過し、スムーズに帰宅。
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
