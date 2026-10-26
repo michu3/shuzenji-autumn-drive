@@ -94,8 +94,8 @@ UID:shuzenji-20261128-08@antigravity
 DTSTAMP:20261024T120000Z
 DTSTART;TZID=Asia/Tokyo:20261128T144000
 DTEND;TZID=Asia/Tokyo:20261128T163000
-SUMMARY:🚙 帰路（伊豆縦貫道→長泉沼津IC→東名上り）
-DESCRIPTION:14:40現地発。東名上り大和トンネルの夕方渋滞（15:30以降ピーク）前に通過し、スムーズに帰宅。
+SUMMARY:🚙 帰路（伊豆縦貫道→長泉沼津IC→新東名上り→海老名JCT→東名）
+DESCRIPTION:14:40現地発は渋滞ゼロ前提の最短見積り。可能なら14:20頃発を目安に。当日の渋滞状況により沼津IC→東名への切替も可。休憩は駿河湾沼津SAで。
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR
