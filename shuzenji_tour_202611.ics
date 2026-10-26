@@ -71,31 +71,30 @@ BEGIN:VEVENT
 UID:shuzenji-20261128-06@antigravity
 DTSTAMP:20261024T120000Z
 DTSTART;TZID=Asia/Tokyo:20261128T123000
-DTEND;TZID=Asia/Tokyo:20261128T134500
-SUMMARY:🎋 修善寺温泉街 散策（修禅寺・竹林の小径・足湯）
-LOCATION:静岡県伊豆市修善寺
-GEO:34.970250;138.925180
-DESCRIPTION:小滝駐車場に駐車して徒歩周遊。\n・修禅寺 本堂参拝＆秋の特別公開「方丈庭園」\n・竹林の小径＆恋の橋めぐり\n・独鈷の湯＆足湯リバーテラス\n・修善寺プリン工房＆源楽の胡麻饅頭
+DTEND;TZID=Asia/Tokyo:20261128T135500
+SUMMARY:🏁 西伊豆スカイライン・ループ（戸田峠→土肥峠→船原峠）
+LOCATION:静岡県伊豆市 西伊豆スカイライン
+DESCRIPTION:食後12:30発。県道18号を登り、戸田峠から西伊豆スカイライン（約10.8km）を南下、土肥峠から国道136号・船原峠を下って修善寺へ戻る周回。\n・登り: 低〜中回転の負荷音\n・稜線: 一定速度クルーズ（途中停車は1回・5分まで）\n・下り: エンブレと減速音\n・中止条件: 霧・濡れ路面・疲労時は戸田峠で引返し、温泉街散策（別案）へ切替
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:shuzenji-20261128-07@antigravity
 DTSTAMP:20261024T120000Z
 DTSTART;TZID=Asia/Tokyo:20261128T140500
-DTEND;TZID=Asia/Tokyo:20261128T144000
-SUMMARY:🍦 道の駅 伊豆ゲートウェイ函南（お土産＆丹那牛乳ソフト）
+DTEND;TZID=Asia/Tokyo:20261128T142000
+SUMMARY:🍦 道の駅 伊豆ゲートウェイ函南（短縮版・お土産＆丹那牛乳ソフト）
 LOCATION:静岡県田方郡函南町塚本887-1 道の駅 伊豆ゲートウェイ函南
 GEO:35.080530;138.938850
-DESCRIPTION:伊豆縦貫道沿いでドライブ休憩とお土産購入。丹那盆地の濃厚ミルクソフトクリーム、地場野菜、わさびミュージアム。\nナビ: https://www.google.com/maps/dir/?api=1&destination=35.080530,138.938850&travelmode=driving
+DESCRIPTION:西伊豆ループ後の短縮版。買い物を絞って14:25出発を守る。時間が押している場合は通過可。丹那盆地の濃厚ミルクソフトクリーム、地場野菜、わさびミュージアム。\nナビ: https://www.google.com/maps/dir/?api=1&destination=35.080530,138.938850&travelmode=driving
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:shuzenji-20261128-08@antigravity
 DTSTAMP:20261024T120000Z
-DTSTART;TZID=Asia/Tokyo:20261128T144000
+DTSTART;TZID=Asia/Tokyo:20261128T142500
 DTEND;TZID=Asia/Tokyo:20261128T163000
 SUMMARY:🚙 帰路（伊豆縦貫道→長泉沼津IC→新東名上り→海老名JCT→東名）
-DESCRIPTION:14:40現地発は渋滞ゼロ前提の最短見積り。可能なら14:20頃発を目安に。当日の渋滞状況により沼津IC→東名への切替も可。休憩は駿河湾沼津SAで。
+DESCRIPTION:14:25函南発。渋滞ゼロ前提で大和トンネルを15:15〜15:30に通過する計算。当日の渋滞状況により沼津IC→東名への切替も可。休憩は駿河湾沼津SAで。
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR
